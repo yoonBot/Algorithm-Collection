@@ -1,2 +1,2 @@
 # Algorithm-Library
-a library of algorithms sorted by their categories. 
+a collection of algorithms sorted by their categories. 
