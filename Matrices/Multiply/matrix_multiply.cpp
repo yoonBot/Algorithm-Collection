@@ -36,12 +36,12 @@ int main(){
     /* Create Input Matrix #2 */
     cout << "Enter Matrix #2 row: ";
     cin >> row2;
+    while (col1 != row2){
+        cout << "Error! Cannot Multiply Matrixes!\n";
+        cin >> row2
+    }
     cout << "Enter Matrix #2 col: ";
     cin >> col2;
-    if (col1 != row2){
-        cout << "Error! Cannot Multiply Matrixes!\n";
-        exit(3);
-    }
 
     mat2 = new int[row2 * col2];
 
