@@ -19,6 +19,7 @@ int main(){
     int *res, *mat1, *mat2;
     double elapsed;
 
+    /* Create Input Matrix #1 */
     cout << "Enter Matrix #1 row: ";
     cin >> row1;
     cout << "Enter Matrix #1 col: ";
@@ -31,7 +32,8 @@ int main(){
             cout << "Enter element at pos: " << i << "," << j << " : ";
             scanf("%d", (mat1 + i * col1 + j));
         }
-
+    
+    /* Create Input Matrix #2 */
     cout << "Enter Matrix #2 row: ";
     cin >> row2;
     cout << "Enter Matrix #2 col: ";
@@ -50,7 +52,8 @@ int main(){
             cin >> element;
             *(mat2 + i * col2 + j) = element;
         }
-
+    
+    /* Create Resulting Matrix */
     // if a x b and b x c, then a x c for final
     res = new int[row1 * col2 + 2];
 
