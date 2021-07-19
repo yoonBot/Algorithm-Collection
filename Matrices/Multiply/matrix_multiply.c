@@ -16,7 +16,8 @@ int main(){
     int row1, col1, row2, col2;
     int *res, *mat1, *mat2;
     double elapsed;
-
+    
+    /* Create Input Matrix #1 */
     printf("Enter Matrix #1 row: ");
     scanf("%d", &row1);
     printf("Enter Matrix #1 col: ");
@@ -29,7 +30,8 @@ int main(){
             printf("Enter element at pos: %d,%d : ", i, j);
             scanf("%d", (mat1 + i * col1 + j));
         }
-
+    
+    /* Create Input Matrix #2 */
     printf("Enter Matrix #2 row: ");
     scanf("%d", &row2);
     while (col1 != row2){
@@ -47,6 +49,7 @@ int main(){
             scanf("%d", (mat2 + i * col2 + j));
         }
     
+    /* Create Resulting Matrix */
     // if a x b and b x c, then a x c for final. 
     res = (int*)malloc(row1 * col2 * sizeof(int));
     
